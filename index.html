@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Karis Tours</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="header-placeholder"></div>
+      <header id="header">
+        <h1 id="title-logo" class="karis-logo"><em>KARIS</em></h1>
+        <nav id="nav-bar">
+          <a href="#about" class="nav-link">about</a>
+          <a href="#spots" class="nav-link">spots</a>
+          <a href="#cta-section" class="nav-link" id="join-cta"
+            >join</a
+          >
+        </nav>
+      </header>
+      <main>
+        <section id="cta-section">
+          <form id="survey-form">
+            <h1 id="title" class="spot-title">
+              <span class="karis-logo"><em>KARIS</em></span> Tours
+            </h1>
+            <p class="cta-text">Start your journey by applying for a tour!</p>
+            <div class="form-control">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="first name last name"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@me.com"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label id="number-label" for="number">Age</label>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                placeholder="18+ only"
+                min="18"
+                max="100"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="dropdown">Spot</label>
+              <select id="dropdown">
+                <option value="">Select an option</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Obidos">Obidos</option>
+              </select>
+            </div>
+            <submit id="submit" class="btn-primary">SUBMIT</submit>
+          </form>
+        </section>
+
+        <section class="last-section">
+          <div class="section-wrapper">
+            <div class="video-wrapper">
+              <iframe
+                height="100%"
+                src="https://www.youtube.com/embed/5KaY90HAFSQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div class="section-wrapper">
+            <div class="about-text">
+              <h2>About us</h2>
+              <p>
+                At KARIS Tours, we specialize in showing people the magic of
+                Portugal.
+              </p>
+              <p id="description">
+                In every KARIS tour, your experience will be filled with the
+                unique culture, rich cuisine, and the famous landscapes and
+                cityscapes that make Portugal the prime destination of the
+                European world.
+              </p>
+              <div class="spot-visual">
+                <img class="spot-photo" src="/img/portugal.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="spots">
+          <div class="section-wrapper">
+            <div class="spot-card">
+              <div class="spot-info">
+                <div>
+                  <h2 class="spot-title">Lagos</h2>
+                  <button class="spot-cta btn-primary">Visit this spot</button>
+                </div>
+                <div>
+                  <p class="spot-description">
+                    Cliffside beaches and codfish cakes await.
+                  </p>
+                </div>
+              </div>
+              <div class="spot-visual">
+                <img class="spot-photo" src="/img/lagos.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="section-wrapper">
+            <div class="spot-card">
+              <div class="spot-info">
+                <div>
+                  <h2 class="spot-title">Obidos</h2>
+                  <button class="spot-cta btn-primary">Visit this spot</button>
+                </div>
+                <div>
+                  <p class="spot-description">Let's get medieval.</p>
+                </div>
+              </div>
+              <div class="spot-visual">
+                <img class="spot-photo" src="/img/obidos.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: hsl(0, 0%, 96%);
+  --accent-red: hsl(0, 84%, 64%);
+  --dark: hsl(0, 0%, 7%);
+  --secondary: hsl(0, 0%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+h2,
+p {
+  margin: 10px 0;
+}
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+.page-wrapper {
+  position: relative;
+}
+.header-placeholder {
+  height: 85px;
+}
+header {
+  position: fixed;
+  top: 0;
+  background-color: var(--primary);
+  width: 100%;
+  margin: 0 auto;
+  height: 85px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--accent-red);
+}
+
+nav a {
+  padding: 0 1rem;
+}
+.nav-link {
+  color: var(--accent-red);
+  text-decoration: none;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+#join-cta {
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+#header-img {
+  height: 100%;
+}
+.karis-logo {
+  font-weight: 900;
+  color: var(--accent-red);
+}
+
+.section-wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 1rem 0;
+}
+
+.spot-card {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.spot-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+.spot-title {
+  color: var(--accent-red);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--primary);
+  background-color: var(--accent-red);
+  border: 1px solid var(--accent-red);
+  border-radius: 0.3em;
+  transition: all 0.5s ease;
+}
+.btn-primary:hover {
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 5px var(--accent-red);
+}
+input:focus,
+button:focus {
+  outline: 1px solid var(--accent-red);
+}
+.spot-photo {
+  width: 100%;
+  object-fit: cover;
+  padding: 5px 0;
+  border-top: 10px solid var(--accent-red);
+  border-bottom: 10px solid var(--accent-red);
+}
+iframe {
+  width: 100%;
+}
+section#cta-section {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 90vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.form-control {
+  width: 100%;
+  text-align: center;
+}
+.form-control label {
+  display: block;
+  color: var(--secondary);
+}
+input,
+select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent-red);
+  font-size: 1rem;
+  margin: 0.8rem auto;
+  border-radius: 0.3em;
+  background-color: white;
+  color: var(--secondary);
+}
+input[type="radio"] {
+  padding: 0;
+  margin: 0;
+}
+.form-control.radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 0;
+}
+.radio-opt {
+  width: 100%;
+}
+.radio-opt label {
+  text-align: center;
+}
+
+.cta-text {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  width: 80%;
+  text-align: center;
+}
+.video-wrapper {
+  height: 75%;
+  width: 100%;
+}
+
+#about {
+  background-color: var(--accent-red);
+  color: var(--primary);
+}
+.about-text {
+  max-width: 75ch;
+  text-align: center;
+}
+#about .spot-visual {
+  padding: 10px;
+}
+#about .spot-photo {
+  padding: 0;
+  border: 1px solid var(--primary);
+}
+#about img {
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  .spot-card {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .spot-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    border-left: 10px solid var(--accent-red);
+  }
+}
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+    padding: 1rem 0;
+    height: auto;
+  }
+  #title-logo {
+    display: none;
+  }
+}
