@@ -60,7 +60,6 @@ nav a {
 }
 #join-cta {
   padding: 0.5rem 1.5rem;
-  text-decoration: none;
 }
 #header-img {
   height: 100%;
@@ -138,7 +137,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .form-control {
@@ -195,11 +193,10 @@ input[type="radio"] {
 }
 .about-text {
   max-width: 75ch;
+  padding: 10px;
   text-align: center;
 }
-#about .spot-visual {
-  padding: 10px;
-}
+
 #about .spot-photo {
   padding: 0;
   border: 1px solid var(--primary);
